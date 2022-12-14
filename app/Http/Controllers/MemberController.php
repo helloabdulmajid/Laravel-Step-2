@@ -13,7 +13,7 @@ class MemberController extends Controller
     //    }
 
     function addData(Request $req){
-        $member=new member;
+        $member=new Member;
         $member->name=$req->membername;
         $member->email=$req->memberemail;
         $member->address=$req->memberaddr;
