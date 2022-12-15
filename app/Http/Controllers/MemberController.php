@@ -18,7 +18,7 @@ class MemberController extends Controller
         $member->email=$req->memberemail;
         $member->address=$req->memberaddr;
         $member->save();
-        return redirect('list');
+        return redirect('add');
 
     }
 }

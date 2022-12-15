@@ -28,6 +28,11 @@ Route::view("/login","users");
 
 // Route::get('/add',[MemberController::class,'addData']);
 Route::POST("/add",[MemberController::class,'addData']);
-Route::view("/add","add");
+// Route::view("/add","add");
 
 Route::get('/list',[MemberListController::class,'show']);
+Route::get('/delete/{id}',[MemberListController::class,'delete']);
+Route::get('/edit/{id}',[MemberListController::class,'showData']);
+Route::POST('/edit',[MemberListController::class,'update']);
+
+
